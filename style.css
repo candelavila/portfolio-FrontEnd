@@ -1,0 +1,124 @@
+    /*Responsive */
+    @media screen and (max-width: 767px) {
+        .navbar-brand{
+            display:none;
+        }
+    }
+    @media screen and (min-width: 700px) {
+        .navbar-brand{
+            display:none;
+        }
+    }
+    
+                /*Estilos generales */
+    section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    h1{
+        font-size: 2.5rem; /*relativo al tamaño de la letra origen*/
+        font-family: 'Rubik Dirt', cursive;
+    }
+    .seccion-oscura{
+        color:#ffff;
+        background-color: #1b1b32;
+    }
+    .seccion-clara{
+        color:black;
+        background-color: azure;
+    }
+    .seccion-titulo{
+        font-size: 2rem;
+        padding: 15px 0;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    
+    .seccion-descripcion{
+        font-size: 1.2rem;
+        color: #584e4e;
+    }
+    
+    /*Seccion Hero */
+    .hero{
+        background-color: rgb(167, 88, 241);
+        color:aliceblue;
+        min-height: 450px;
+        text-align: center;
+    }
+    .hero-principal{
+        padding: 3rem;
+    }
+    .hero-img-desarrolladora{
+        width: 200px;
+        height:200px;
+        margin:20px;
+        border-radius:20px;
+    }
+    .hero-principal h2{
+        font-size: 1.5rem;
+        color: #615151;
+    }
+    
+    /*para -hero-inferior-img*/
+    @media screen and (min-width: 700px) {
+        .hero-inferior-img{
+            max-width: 600px;
+        }
+    }
+    
+                /*Seccion Sobre mi */
+    .sobre-mi{
+        height:500px;
+        padding:10px;
+    }
+    .sobre-mi .container{
+        max-width: 600px;
+        text-align: center;
+    }
+    .seccion-titulo{
+        font-size: 2rem; /*relativo al tamaño de la letra origen*/
+        padding: 15px 0;
+        font-family: 'Rubik Dirt', cursive;
+    }
+    .seccion-subtitulo{
+        font-size: 1rem; /*relativo al tamaño de la letra origen*/
+        padding: 15px 0;
+        font-family: 'Rubik Dirt', cursive;
+    }
+    .seccion-texto{
+        font-size:  1.2rem;
+    }
+    
+                /*Seccion experiencia */
+    .experiencia{
+        padding: 40px 40px 60px 40px;
+    }
+    .experiencia i{
+        font-size: 2.5rem;
+        color:#7ade30;
+        background-color: #0a0a23;
+        padding: 8px 19px;
+        border-radius: 50%;
+    }
+    .experiencia-titulo{
+        font-size: 25px;
+        font-weight: bold;
+        margin: 10px 0;
+    }
+    .badge-container{
+        font-size: 25px;
+        font-weight: bold;
+        margin:10px 0;
+    }
+    .badge{
+        margin:5px;
+    }
+    
+    /*Seccion proyectos*/
+    .card{
+        max-width: 20rem;
+        display: flex;
+    }
