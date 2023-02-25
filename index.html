@@ -2,198 +2,336 @@
 <html  lang="es">
 <head>
 	<meta charset="UTF-8">
-	<meta name="keywords" content="yoprogramo,argentinaprograma,HTML,CSS,Javascript,FrontEnd,BackEnd">
+	<meta name="keywords" content="se programar,yo programo,argentina programa,HTML,CSS,FrontEnd,BackEnd">
 	<meta name="description" content="Portfolio web de desarrollo web de Candela Mariana Avila Costa - trabajo integrador del programa #YoProgramo.">
 	<meta name="author" content="Candela Mariana Avila Costa">
     <meta name="viewport" content="width=device-width, initial-sacle=1">
-    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
-    <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    
+    
     <!--Custom CSS-->
-     <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="style.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
     <title>Portfolio web | Candela Avila</title>
+    
     <!--favicon-->
     <link rel="icon" type="image/x-icon" href="imagenes/argprograma.png">
 
-    <!--fuente-->
+    <!--fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="bg-dark">
-        <div class="container">
-            <!-- Navbar -->
-            <nav class="navbar bg-body-tertiary">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="pagina.html"><img src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-                    Argentina Programa
-                    </a>
-                </div>
-            </nav>
-            <!-- Navbar -->
-        </div>
-    </div>
+
+  
+<div class="container-fluid">
+
+    <!--Seccion Navbar-->
+  <div class="row min-vh-100 flex-column flex-md-row">
     
+    <aside class="col-0 col-md-3 col-xl-2 p-0 bg-dark flex-shrink-1 pull-left">
+      <!--navbar-expand-md tenia el elemento nav-->
 
-             <!--Seccion Hero-->
-    <section class="hero align-items-stretch">
-        <div class="hero-principal">
-            <img class="hero-img-desarrolladora rounded-circle" src="me.svg" alt="foto de Candela">
-            <h1>Candela Mariana Avila Costa</h1>
-            <h2>Desarrolladora Web Fullstack</h2>
-        </div>
-        <div class="hero-inferior">
-            <!--img svg no se distorciona-->
-            <img class="hero-inferior-img img-fluid" src="heroimg-.svg" alt="Monitor, laptop y mas scosas">
-        </div>
-    </section>
-
-             <!--Seccion Sobre mi-->
-    <section class="sobre-mi seccion-oscura">
-        <div class="container about-me">
-            <h2 class="seccion-titulo">Sobre mí</h2>
-            <p class="seccion-texto">¡Hola! Soy Candela. Comencé a formarme en tecnología cuando empecé la carrera para Analista en Sistemas. Apunto a crecer profesionalmente como <b>desarrolladora web FullStack</b>. Busco aplicar las cosas que aprendo para realizar proyectos re copados, me gusta trabajar en equipo porque me gusta encontrar en la experiencia de los demás un medio para enriquecerme.</p>
-        </div>
-    </section>
-
-    <!--Seccion educación-->
-    <section>
+      <nav class="navbar navbar-expand-lg navbar-dark bd-dark flex-md-column flex-row align-items-center py-2 text-center sticky-top" id="sidebar" role="navigation">
         
-    </section>
+          <!--boton para cuando se achica la pantalla-->
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <!--Seccion proyectos-->
-    <section class="proyectos-recientes seccion-clara d-flex flex-column">
-        
-      <h2 class="seccion-titulo">Proyectos</h2>
-      <h3 class="seccion-descripcion">Estos son los proyectos que he creado</h3>
-
-          <div class="row row-cols-1 row-cols-md-2 g-4">
-            <div class="col">
-              <div class="card proyecto">
-                <img src="juegoimg.jpg" class="card-img-top" alt="img del juego">
-                <div class="card-body">
-                  <h5 class="card-title">Juego con C++</h5>
-                  <p class="card-text">"Deadline Oop Game" es un juego desarrollado con el lenguaje C++ y la biblioteca SMFL para reflejar conocimientos de dicho lenguaje y de POO.</p>
-                  <a href="https://github.com/candelavila?tab=repositories" target="_blank" rel="noopener noreferrer" class="card-link">Ver repositorio</a>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card proyecto">
-                <img src="bandana.jpg" class="card-img-top" alt="img de la banda Bandana">
-                <div class="card-body">
-                  <h5 class="card-title">Página tributo</h5>
-                  <p class="card-text">Una página tributo a un grupo de pop femenino para reflejar conocimientos en HTML y CSS (algunos datos son inventados).</p>
-                  <a href="https://github.com/candelavila?tab=repositories" target="_blank" rel="noopener noreferrer" class="card-link">Ver repositorio</a>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card proyecto">
-                <img src="argprograma.jpg" class="card-img-top" alt="img del portfolio web">
-                <div class="card-body">
-                  <h5 class="card-title">Portfolio web</h5>
-                  <p class="card-text">Mi portfolio web para reflejar conocimientos en FrontEnd y BackEnd.</p>
-                  <a href="https://github.com/candelavila?tab=repositories" target="_blank" rel="noopener noreferrer" class="card-link">Ver repositorio</a>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card proyecto">
-                <img src="..." class="card-img-top" alt="img de base de datos">
-                <div class="card-body">
-                  <h5 class="card-title">Base de Datos</h5>
-                  <p class="card-text">Base de datos hecha con SQL.</p>
-                  <a href="https://github.com/candelavila?tab=repositories" target="_blank" rel="noopener noreferrer" card-link">Ver repositorio</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-    </section>
-
-
-    <!--Seccion Habilidades-->
-    <section>
-        
-    </section>
-
-
-    <!--Seccion Contacto-->
-      <section>
-        <div class="ontainer ">
-          <h4 id="contact"><b>Contactame</b></h4>
-          <div class="w3-row-padding w3-center w3-padding-24" style="margin:0 -16px">
-            <div class="w3-third w3-dark-grey">
-              <p><i class="fa fa-envelope w3-xxlarge w3-text-light-grey"></i></p>
-              <p>avila.cande999@gmail.com</p>
-            </div>
-            <div class="w3-third w3-teal">
-              <p><i class="fa fa-map-marker w3-xxlarge w3-text-light-grey"></i></p>
-              <p>Entre Rios, AR</p>
-            </div>
-            <div class="w3-third w3-dark-grey">
-              <p><i class="fa fa-phone w3-xxlarge w3-text-light-grey"></i></p>
-              <p>3434 766 753</p>
-            </div>
-          </div>
-          <hr class="w3-opacity">
-          <form action="https://www.w3schools.com/action_page.php" target="_blank">
-            <div class="w3-section">
-              <label>Nombre y Apellido</label>
-              <input class="w3-input w3-border" type="text" name="Name" required="">
-            </div>
-            <div class="w3-section">
-              <label>Email</label>
-              <input class="w3-input w3-border" type="text" name="Email" required="">
-            </div>
-            <div class="w3-section">
-              <label>Mensaje</label>
-              <input class="w3-input w3-border" type="text" name="Message" required="">
-            </div>
-            <button type="submit" class="w3-button w3-black w3-margin-bottom"><i class="fa fa-paper-plane w3-margin-right"></i>Enviar mensaje</button>
-          </form>
+        <div class="text-center p-3">
+          <img src="me.jpg" class="img-fluid rounded-circle my-4 p-1 d-none d-md-block shadow" alt="imagen de perfil">
+          <a href="#" class="navbar-brand mx-0 text-nowrap"><p>Candela Mariana</p></a>
+          <ul class="nav justify-content-center ">
+            <li class="nav-item">
+              <a href="https://github.com/candelavila" target="_blank" rel="noopener noreferrer" class="fa-lg"><i class="bi bi-github logo"></i></a> 
+            </li>
+            <li class="nav-item">
+              <a href="https://github.com/candelavila" target="_blank" rel="noopener noreferrer" class="fa-lg"><i class="bi bi-linkedin logo"></i></a>
+            </li>
+          </ul>
         </div>
-      </section>
-
-      <!--Menú lateral-->
-  <aside>
-    <h2>Mi cuenta</h2>
-        <header>
-            <nav> <!--la lista q va a redirigir a las secciones de la pagina-->
-                <ul> <!--buscar como redirigir en la misma pagina, no enviando a otras-->
-                    <li><a href="#sobre-mi">Sobre mí</a></li>
-                    <li><a href="#mi-experiencia">Experiencia</a></li>
-                    <li><a href="#mi-educacion">Educación</a></li>
-                    <li><a href="mis-habilidades">Hard & Soft Skills</a></li>
-                    <li><a href="mis-proyectos-github">Proyectos</a></li>
-                    <li><a href="mis-redes-linkedin">Contactame</a></li>
-                </ul>
-            </nav>
-        </header> 
+        <div class="collapse navbar-collapse prder-last" id="navbarCollapse">
+          <ul class="navbar-nav flex-column w-100 justify-content-start">
+            <li class="nav-item"><a href="#inicio" class="nav-link"><i class="bi bi-house logo"></i> Inicio</a></li>
+            <li class="nav-item"><a href="#sobre-mi" class="nav-link"><i class="bi bi-person logo"></i> Sobre mí</a></li>
+            <li class="nav-item"><a href="#proyectos" class="nav-link"><i class="bi bi-briefcase logo"></i> Proyectos</a></li>
+            <li class="nav-item"></i><a href="#contacto" class="nav-link"><i class="bi bi-envelope logo"></i> Contacto</a></li>
+            <li class="nav-item"></i><a href="#contacto" class="nav-link"><i class="bi bi-box-arrow-in-right logo"></i> Login</a></li>
+          </ul>
+        </div>  
+            
+      </nav>
     </aside>
 
-<!--la barra lateral-->
-<div class="w3 side-bar" id="sidenav" style="top:44px; display:block;">
-  <div id="leftmenuinner" style="padding-top: 44px;">
-      <div id="leftmenuinner-inner">
-          <h2 class="left"><span class="h2_left">Mi portfolio</span>
-          </h2>
-          <a target="_top" href="la misma pagina pero en la seccion q dice el nombre">Sobre Mi</a>
-          <a target="_top" href="la misma pagina pero en la seccion q dice el nombre">Educacion</a>
-          <a target="_top" href="la misma pagina pero en la seccion q dice el nombre">Experiencia</a>
-          <a target="_top" href="la misma pagina pero en la seccion q dice el nombre">Contactame</a>
-      </div>
+          <!--Content-->
+    <div class="col-12 col-md-9 col-xl-10 p-0 flex-shrink-1 pull-right">
+      <div id="content">
+
+              <!--Section Hero-->
+            <section class="hero align-items-center" id="inicio" aria-labelledby="inicio" role="region">
+              <div class="hero container">
+                <div class="hero__info">
+        
+                  <h1>Candela Mariana Avila Costa<br>
+                    <small class="text-muted">Desarrolladora Web Fullstack</small>
+                  </h1>
+                </div>
+                <div class="hero-inferior">
+                    
+                </div>
+              </div>
+            </section>
+        
+            <div class="wall"></div>
+                
+            <!--Section About-->
+            <section class="sobre-mi seccion-clara" id="sobre-mi" aria-labelledby="sobre-mi" role="region">
+                <div class="container-fluid about-me">
+                  <h2 class="seccion-titulo">Sobre mí</h2>
+                  <p class="seccion-texto text-start">¡Hola! Soy Candela. Comencé a formarme en tecnología cuando empecé la carrera para Analista en Sistemas. Apunto a crecer profesionalmente como <b>desarrolladora web FullStack</b>. Busco aplicar las cosas que aprendo para realizar proyectos re copados, me gusta trabajar en equipo porque me gusta encontrar en la experiencia de los demás un medio para enriquecerme.</p>
+                </div>
+
+                <div class="wall"></div>
+
+                <div class="subabout-container">
+                  <div class="col-subabout sobre-mi sobre-mi-educacion">
+                      <h2 class="seccion-titulo">Educación</h2>
+                      <div class="subabout-cards">
+                        <div class="card">
+                          <div class="card-body">
+                              <h4>Lic. en Sistemas</p><br>
+                                <small class="text-muted">2022 - 2023</small>
+                                <small class="text-muted"><em>FCyT - UADER</em></small>
+                                <p>Carrera que hace de todo lo de la informatica.</p>
+                              </h4>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="card-body">
+                              <h4>Desarrollo Web FullStack</p><br>
+                                <small class="text-muted">2022 - 2023</small>
+                                <small class="text-muted"><em>Argentina Programa</em></small>
+                                <p>Curso de Desarrollo Web donde se estudian diversas tecnologías como HTML, CSS, Javascript, Java, SpringBoot, entre otras.</p>
+                              </h4>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="card-body">
+                              <h4>Responsive Web Design</p><br>
+                                <small class="text-muted">2022-2023</small>
+                                <small class="text-muted"><em>FreeCodeCamp</em></small>
+                                <p>Curso de Desarrollo FrontEnd responsivo donde se aprende a crear páginas web con estilos adaptables a diferentes dispotivos.</p>
+                              </h4>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col-subabout sobre-mi sobre-mi-experiencia">
+                    <h2 class="seccion-titulo">Experiencia laboral</h2>
+                    <div class="subabout-cards">
+                      <div class="card">
+                        <div class="card-body">
+                            <h4>FrontEnd Developer</p>
+                              <small class="text-muted">2023 - presente</small>
+                              <small class="text-muted"><em>Freelance</em></small>
+                              <p>Desarrollo de proyectos personales a fin de desarrollar mis habilidades.</p>
+                            </h4>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </section>
+        
+             <!--cambiar nombre de la class subabout-container por uno mas gral -->
+                    <!-- Seccion proyectos-->
+            <section class="seccion-clara proyectos-recientes d-flex flex-column" id ="proyectos" role="region">
+                
+              <h2 class="seccion-titulo">Proyectos</h2>
+              <h3 class="seccion-texto">Estos son algunos proyectos que he creado</h3>
+        
+                  <div class="subabout-container">
+                      <div class="card proyecto">
+                        <img src="juegoimg.jpg" class="card-img-top" alt="img del juego">
+                        <div class="card-body">
+                          <h5 class="card-title">Juego con C++</h5>
+                          <p class="card-text">"Deadline Oop Game" es un juego desarrollado con el lenguaje C++ y la biblioteca SMFL para reflejar conocimientos de dicho lenguaje y de POO.</p>
+                          <a href="https://github.com/candelavila?tab=repositories" target="_blank" rel="noopener noreferrer" class="card-link">Ver repositorio</a>
+                        </div>
+                      </div>
+                      <div class="card proyecto">
+                        <img src="bandana.jpg" class="card-img-top" alt="img de la banda Bandana">
+                        <div class="card-body">
+                          <h5 class="card-title">Página tributo</h5>
+                          <p class="card-text">Una página tributo a un grupo de pop femenino para reflejar conocimientos en HTML y CSS.</p>
+                          <a href="https://github.com/candelavila/miweb/tree/responsive-sectionss" target="_blank" rel="noopener noreferrer" class="card-link">Ver repositorio</a>
+                        </div>
+                      </div>
+                      <div class="card proyecto">
+                        <img src="argprograma.jpg" class="card-img-top" alt="img del portfolio web">
+                        <div class="card-body">
+                          <h5 class="card-title">Portfolio web</h5>
+                          <p class="card-text">Mi portfolio web para reflejar conocimientos en FrontEnd y BackEnd.</p>
+                          <a href="https://github.com/candelavila?tab=repositories" target="_blank" rel="noopener noreferrer" class="card-link">Ver repositorio</a>
+                        </div>
+                      </div>
+                      <div class="card proyecto">
+                        <img src="shakira-using-pc.jfif" class="card-img-top" alt="img de base de datos">
+                        <div class="card-body">
+                          <h5 class="card-title">Base de Datos</h5>
+                          <p class="card-text">Base de datos hecha con SQL.</p>
+                          <a href="https://github.com/candelavila?tab=repositories" target="_blank" rel="noopener noreferrer" card-link">Ver repositorio</a>
+                        </div>
+                      </div>
+                  </div>
+        
+            </section>
+            
+            <div class="wall"></div>
+        
+            <!--Section skills-->
+            <section class="habilidades seccion-clara d-flex flex-column" id="habilidades" role="region">
+              <h2 class="seccion-titulo">Habilidades</h2>
+              <p class="seccion-texto">Mis habilidades técnicas y blandas</p>
+              <div class="container-fluid">
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                  <div class="col">
+                    <h4>Hardskills</h4>
+                    <div class="Hardskills">
+        
+                      <div class="col">
+                        <div class="habilidad">
+                          <p>HTML</p>
+                          <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                          <div class="progress-bar" style="width: 60%">60%</div>
+                          </div>
+                        </div>
+                      </div>
+        
+                      <div class="col">
+                        <div class="habilidad">
+                          <p>CSS</p>
+                          <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+                          <div class="progress-bar" style="width: 40%">40%</div>
+                          </div>
+                        </div>
+                      </div>
+        
+                      <div class="col">
+                        <div class="habilidad">
+                          <p>Javascript</p>
+                          <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                          <div class="progress-bar" style="width: 25%">25%</div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="col">
+                        <div class="habilidad">
+                          <p>Java</p>
+                          <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                          <div class="progress-bar" style="width: 25%">25%</div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col">
+                        <div class="habilidad">
+                          <p>C++</p>
+                          <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                          <div class="progress-bar" style="width: 75%">75%</div>
+                          </div>
+                        </div>
+                      </div>
+        
+                      <div class="col">
+                        <div class="hhabilidad">
+                          <p>SQL</p>
+                          <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+                          <div class="progress-bar" style="width: 10%">30%</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+        
+                  <div class="col">
+                    <h4>Softskills</h4>
+                    <div class="Softskills">
+        
+                      <div class="col">
+                        <div class="habilidad">
+                          <p>Paciente</p>
+                          <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                          <div class="progress-bar" style="width: 80%">80%</div>
+                          </div>
+                        </div>
+                      </div>
+        
+                      <div class="col">
+                        <div class="habilidad">
+                          <p>Cordial</p>
+                          <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                          <div class="progress-bar" style="width: 50%">50%</div>
+                          </div>
+                        </div>
+                      </div>
+        
+                      <div class="col">
+                        <div class="habilidad">
+                          <p>Colaborativa</p>
+                          <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                          <div class="progress-bar" style="width: 90%">90%</div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+                
+            </section>
+        
+            <div class="wall"></div>
+
+            <!--Contact section-->
+            <section class="seccion-clara contacto" id="contacto" aria-labelledby="contacto" role="region">
+              <article>
+                    <h2 class="seccion-titulo">¿Te interesa trabajar conmigo?</h2>
+                    <p class="seccion-texto">No dudes en hablarme para charlar lo que queres concretar :)</p>
+                    <hr class="w3-opacity">
+                    <form id="survey-form">
+                      <fieldset>
+                        <label id="name-label">* Nombre: <input id="name" name="name" type="text" required /></label>
+                        <label id="email-label">* Email: <input id="email" name="email" type="email" required /></label>
+                      </fieldset>
+                      <fieldset>
+                        <label id="asunto-label">Asunto: <input id="asunto" name="asunto" type="text" required/></label>
+                        <p>* Mensaje: </p>
+                        <textarea id="mensaje" name="mensaje"></textarea>
+                      </fieldset>
+                      <p><emp>* Campos requeridos</emp></p>
+                      <input id="submit" type="submit">
+                    </form>
+              </article>
+            </section>
+        
+        
+            
+        
+            <!--Footer-->
+          <footer class="d-flex flex-column align-items-stretch justify-content-center"> <!--pie de pagina-->
+            <p>Autoría de: <a href="https://LinkedIn.com/candelavilx">Candela Mariana Avila Costa</a></p>
+          </footer>
+        </div>
+    </div>
   </div>
- </div>
+</div>
 
-  <footer> <!--pie de pagina-->
-    <p>Autoría de: <a href="https://LinkedIn.com/candelavilx">Candela Mariana Avila Costa</a></p>
-  </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>
